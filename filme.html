@@ -53,33 +53,36 @@
             </section id="search-bar">
             <ul class="nav-list">
               <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="generos" href="./listagem.html   ">Gêneros</a></li>
-              <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html">Login</a></li>
+              <li class = 'hidden  no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686]" id="login" href="./login.html">Login</a></li>
               <li class = 'inline no-underline ml-[1.5em] mr-0 sm:mr-[2em]'><a class= "no-underline text-white transition-[0.4s] hover:text-[#868686] hidden md, lg:inline" id="assista" href="./listagem.html">Assista Agora</a></li>
             </ul>
           </nav>
         </div>
       </header>
     <main>
-        <div id="movie-container" class="relative mb-33 flex   max-[700px]:h-auto max-[700px]:max-w-[100px] max-[700px]:mb-[15vw]">
-            <div id="left-half" class="flex-1 ml-5  max-[700px]:max-w-[100vw] max-[700px]:items-center  max-[700px]:ml-0">
+        <div id="movie-container" class="relative mb-33 flex h-auto lg: mb-4">
+            <div id="left-half" class="flex-1 ml-0 max-[700px]:items-center">
                 <div id="movie-poster" class='flex justify-center left-0 top-0 overflow-x-none'>
-                    <img id=background-image class='w-screen hidden relative overflow-x-none  max-[700px]:block max-[700px]:mb-[10vw] max-[700px]:justify-end' src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
+                    <img id=background-image class='w-screen hidden relative overflow-x-none  max-[768px]:block max-[768px]:mb-[2vw] max-[768px]:justify-end' src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
                 </div>
-                <section class="details"></section>
-                    <h3 class="text-[#D9D9D9] text-[40px] ml-5 mt-[75px]   max-[700px]:text-[25px]">Título (Ano) <a href="https://www.imdb.com/"><span id="imdb-icon" class="content-[url('https://api.iconify.design/bxl/imdb.svg?color=%23d3ca78')] w-[75px] float-right mr-[5vw] hover:content-[url('https://api.iconify.design/bxl/imdb.svg?color=%23d9d9d9')]    max-[700px]:w-[12vw] max-[700px]:mr-[9vw]"></span></a></h2>
-                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Classificação Indicativa: 13
-                    </h2>
-                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Duração: 2h19min
-                    </h2>
-                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Diretor: Stanley Kubrick
-                    </h2>
-                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Elenco
-                        <p class="text-[#D9D9D9] text-xl   max-[700px]:text-[13px]">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                    </h2>
-                    <h2 class="m-[50px] text-[#D9D9D9] text-3xl   max-[700px]:text-lg">Sinopse
-                        <p class="text-[#D9D9D9] text-xl   max-[700px]:text-[13px]">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                    </h2>
-              <div id="table-container" class="flex justify-items-center max-w-max bg-[#23232e] m-[5vw] p-5 left-0 top-0 overflow-x-none   max-[700px]:max-w-max max-[700px]:p-12">
+                <section class="details hidden mt-20 md:block "></section>
+                  <div class="ml-5">
+                    <h1 class="text-[#D9D9D9] text-2xl md:text-3xl">Título (Ano) <a href="https://www.imdb.com/"><span id="imdb-icon" class="content-[url('https://api.iconify.design/bxl/imdb.svg?color=%23d3ca78')] w-[75px] float-right mr-[5vw] hover:content-[url('https://api.iconify.design/bxl/imdb.svg?color=%23d9d9d9')] max-[700px]:w-[12vw] max-[700px]:mr-[9vw]"></span></a></h1>
+                    <p class="mt-2 text-[#D9D9D9] text-base max-[768px]: mt-6">Classificação Indicativa: 13</p>
+                    <p class="mt-2 text-[#D9D9D9] text-base max-[768px]: mt-6">Duração: 2h19min</p>
+                    <p class="mt-2 text-[#D9D9D9] text-base max-[768px]: mt-6">Diretor: Stanley Kubrick</p>
+                    <p class="mt-2 text-[#D9D9D9] text-base max-[768px]: mt-6">Elenco
+                        <p class="text-[#D9D9D9] text-base">Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </p>
+                    <p class="mt-2 text-[#D9D9D9] text-base max-[768px]: mt-6">Sinopse
+                        <p class="text-[#D9D9D9] text-base ">Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                    </p>
+                  </div>
+
+
+
+
+              <div id="table-container" class="flex justify-items-center w-screen bg-[#23232e] m-16 p-5 left-0 top-0 overflow-x-none max-[768px]:mx-auto justify-items-center max-w-max bg-[#23232e] m-16 p-5 left-0 top-0 overflow-x-none">
                 <section id="icons-table" class="border-collapse">
                   <div>
                     <section class="texto items-center justify-items-center text-center">
@@ -88,7 +91,7 @@
                   </div>
                   <table>
                     <tr>
-                      <td id="silver" class="bg-[#D9D9D9] [writing-mode:vertical-lr] pt-3">STREAM</td>
+                      <td id="silver" class="bg-[#D9D9D9] text-black [writing-mode:vertical-lr] pt-3">STREAM</td>
                       <td class="text-start font-normal p-0.5 border-[none]">
                         <a href="https://www.netflix.com">
                           <span id="icons netflix-icon" class="content-[url('https://api.iconify.design/ri/netflix-fill.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/ri/netflix-fill.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
@@ -106,7 +109,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td id="blue" class="bg-[#050434] text-white [writing-mode:vertical-lr] pt-3">ALUGAR</td>
+                      <td id="blue" class="bg-[#050434] text-black [writing-mode:vertical-lr] pt-3">ALUGAR</td>
                       <td class="text-start font-normal p-0.5 border-[none]">
                         <a href="https://www.appletv.com">
                           <span id="icons apple-tv-icon" class="content-[url('https://api.iconify.design/simple-icons/appletv.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/simple-icons/appletv.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
@@ -124,7 +127,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td id="gold" class="bg-[#D3CA78] [writing-mode:vertical-lr] pt-1.5">COMPRAR</td>
+                      <td id="gold" class="bg-[#D3CA78] text-black [writing-mode:vertical-lr] pt-1.5">COMPRAR</td>
                       <td class="text-start font-normal p-0.5 border-[none]">
                       <a href="https://www.paramountplus.com">
                         <span id="icons paramount-icon" class="content-[url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23454444')] hover:content-[url('https://api.iconify.design/arcticons/paramount-plus.svg?color=%23d9d9d9')] m-[15px] w-[45px] bg-white text-[#454444] p-[5px] rounded-[10px] hover:bg-[#17171F]"></span>
@@ -145,10 +148,15 @@
                 </section>
               </div>
             </div>
-            <div id="right-half" class="flex-[2] flex items-center justify-center relative before:absolute before:w-full before:h-full before:bg-[linear-gradient(to_right,rgb(23,23,31,0.9),transparent)] before:left-0 before:top-0    max-[700px]:hidden">
-              <img class="w-full h-full object-cover" src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
+
+            <div id="right-half" class="m-0 hidden items-center justify-center relative md:block">
+              <img class="w-full h-[screen] object-cover lg:h-1/2 md:h-1/2 sm:h-screen" src="./images/classic-movie-1920-1080.jpg" alt="Imagem">
             </div>
+          
+          
           </div>
+
+
           <div>
             <section class="texto items-center justify-items-center text-center mt-[25px]">
               <p class="text-white text-4xl mb-[62px]">Trailer</p>
