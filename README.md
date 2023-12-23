@@ -1,7 +1,5 @@
 # LmCult
 
-![LmCult Logo](link/to/your/logo.png)
-
 ## Overview
 
 LmCult is a movie-related content platform that provides information about movies, allows users to search for films, view details, watch trailers, and discover recommendations.
